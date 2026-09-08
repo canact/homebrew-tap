@@ -1,28 +1,28 @@
 class Canact < Formula
   desc "Probe an LLM and return host policy: max tools, edit format, XML fallback, JSON repair"
   homepage "https://github.com/canact/canact"
-  version "0.1.1"
+  version "0.1.2"
   if OS.mac?
     if Hardware::CPU.arm?
-      url "https://github.com/canact/canact/releases/download/v0.1.1/canact-aarch64-apple-darwin.tar.xz"
-      sha256 "4433ccaed522a8f901d7a047045ae9efa79058d61b53ab751e111f431bd5d760"
+      url "https://github.com/canact/canact/releases/download/v0.1.2/canact-aarch64-apple-darwin.tar.xz"
+      sha256 "4c9e22ffc01a43e76ae0770517baaa2703fbb89095299583958064fe1df61962"
     end
     if Hardware::CPU.intel?
-      url "https://github.com/canact/canact/releases/download/v0.1.1/canact-x86_64-apple-darwin.tar.xz"
-      sha256 "643fe837a8fde82a92215ab06de64806b45c788957a8e3eaa2fc8d1394974e5e"
+      url "https://github.com/canact/canact/releases/download/v0.1.2/canact-x86_64-apple-darwin.tar.xz"
+      sha256 "a76727bd073523ee449901f39250c3d5b4ccb78f070b8014398c6ca3b1ed0eb7"
     end
   end
   if OS.linux?
     if Hardware::CPU.arm?
-      url "https://github.com/canact/canact/releases/download/v0.1.1/canact-aarch64-unknown-linux-gnu.tar.xz"
-      sha256 "31b14cc2e6b45898363b481e2c0576d8d70acda7870a9ed8c276adf529a73789"
+      url "https://github.com/canact/canact/releases/download/v0.1.2/canact-aarch64-unknown-linux-gnu.tar.xz"
+      sha256 "c18f7fe9998827ce85b989998248fe0ffb5e95f570f3f161138d4fa12fe87e5f"
     end
     if Hardware::CPU.intel?
-      url "https://github.com/canact/canact/releases/download/v0.1.1/canact-x86_64-unknown-linux-gnu.tar.xz"
-      sha256 "3f2e69af3ac6f8abf5d7780e82314fdba31be1b09e70182bb28ce4dcdb86952d"
+      url "https://github.com/canact/canact/releases/download/v0.1.2/canact-x86_64-unknown-linux-gnu.tar.xz"
+      sha256 "f3d747653dfd0bdd462a793801fdf6ed9a59b98314d7a003299a8410e6e04891"
     end
   end
-  license "Apache-2.0"
+  license any_of: ["MIT", "Apache-2.0"]
 
   BINARY_ALIASES = {
     "aarch64-apple-darwin":      {},
