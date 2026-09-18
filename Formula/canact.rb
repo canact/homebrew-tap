@@ -1,25 +1,25 @@
 class Canact < Formula
   desc "Probe an LLM and return host policy: max tools, edit format, XML fallback, JSON repair"
   homepage "https://github.com/canact/canact"
-  version "0.6.0"
+  version "0.7.0"
   if OS.mac?
     if Hardware::CPU.arm?
-      url "https://github.com/canact/canact/releases/download/v0.6.0/canact-aarch64-apple-darwin.tar.xz"
-      sha256 "dfa0054ce662db65df923087c6efed4e48e0ef581c732ce54eecdbf709353934"
+      url "https://github.com/canact/canact/releases/download/v0.7.0/canact-aarch64-apple-darwin.tar.xz"
+      sha256 "b186fcb9490dce3a56c99b0107242a6abe8539258a8229a750f772df2277bab1"
     end
     if Hardware::CPU.intel?
-      url "https://github.com/canact/canact/releases/download/v0.6.0/canact-x86_64-apple-darwin.tar.xz"
-      sha256 "099eb21ca433da0b757c544810415b9e064b198679736afb1652f583f3a5a4fe"
+      url "https://github.com/canact/canact/releases/download/v0.7.0/canact-x86_64-apple-darwin.tar.xz"
+      sha256 "868fb86e44d8662b88ef39fcd446e91ff305ba7fe398913ea0ef59569f79f31c"
     end
   end
   if OS.linux?
     if Hardware::CPU.arm?
-      url "https://github.com/canact/canact/releases/download/v0.6.0/canact-aarch64-unknown-linux-gnu.tar.xz"
-      sha256 "91e19f3ef11b9948ba5d4974255118d190f8d2a7efe023e6c2f99e3f7f312326"
+      url "https://github.com/canact/canact/releases/download/v0.7.0/canact-aarch64-unknown-linux-gnu.tar.xz"
+      sha256 "b9ff4263346e670f0ee42d7436d88257e9cec9fcfbc2650ab4174a806f901582"
     end
     if Hardware::CPU.intel?
-      url "https://github.com/canact/canact/releases/download/v0.6.0/canact-x86_64-unknown-linux-gnu.tar.xz"
-      sha256 "b38f987d74b030f622c9044d713f611c4d709830129b32cbd3b6ae6d3970b0a8"
+      url "https://github.com/canact/canact/releases/download/v0.7.0/canact-x86_64-unknown-linux-gnu.tar.xz"
+      sha256 "859db94a5e02edd97a50753c57fc64bd1dd11061f914bdceb275cdb611bb9c3a"
     end
   end
   license any_of: ["MIT", "Apache-2.0"]
